@@ -1,0 +1,43 @@
+.body {
+    margin: 0;
+}
+
+.headerBar {
+    background-color: purple;
+    margin-top: 15px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+.footer {
+    background-color: purple;
+    margin-bottom: 15px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 50px;
+    flex-wrap: wrap;
+    /* border: solid 2px; */
+    /* justify-content: space-around; */
+}
+
+.jumbotron {
+    border: solid 5px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 5px;
+}
+
+.secondbox {
+    border: solid 5px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 5px;
+}
