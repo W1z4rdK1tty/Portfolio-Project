@@ -1,3 +1,25 @@
+fetch('data.json').then(function (response) {
+    return response.json()
+}).then(function (data) {
+
+    const displayTarget = document.querySelector('.target')
+
+    let output = ''
+
+    data.items.forEach(function (project) {
+        output += '<div class="project">'
+        output += '<h3>' + project.name + '</h3>'
+        output += '<a href="' + project.link + '" target="_blank">'
+        output += '<img src="' + project.image + '" />'
+        output += '</a>'
+        output += '<p>' + project.desc + '</p>'
+        output += '</div>'
+    })
+    displayTarget.innerHTML = output
+})
+
+
+
 // created variable to get button element from DOM
 const clickerButton = document.getElementById('clicker')
 
