@@ -1,5 +1,6 @@
-.body {
+body {
     margin: 0;
+    font-family: 'Philosopher', sans-serif;
 }
 
 .headerBar {
@@ -11,11 +12,51 @@
 }
 
 .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: purple;
     margin-bottom: 15px;
     padding: 5px;
     color: white;
     text-align: center;
+    gap: 10px;
+}
+
+.footerLeft {
+    display: flex;
+    align-items: center;
+}
+
+#contactSection {
+    display: flex;
+   
+}
+
+.footerMiddle {
+    display:flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-right: 0.8rem;
+}
+
+.socials {
+    font-size: 2rem;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80px;
+    gap: 8px;
+    align-items: center;
+}
+
+.socials a { 
+    color:white;
+    text-decoration:none;
+}
+
+.socials a:hover {
+    color: fuchsia;
 }
 
 .container {
@@ -24,20 +65,35 @@
     padding: 50px;
     gap: 50px;
     flex-wrap: wrap;
-    /* border: solid 2px; */
-    /* justify-content: space-around; */
 }
 
 .jumbotron {
-    border: solid 5px;
+    border: solid 5px black;
     margin-left: 200px;
     margin-right: 200px;
-    padding: 5px;
+    padding: 15px;
+    text-align: center;
 }
 
 .secondbox {
-    border: solid 5px;
+    border: solid 5px black;
     margin-left: 200px;
     margin-right: 200px;
     padding: 5px;
+    align-items: center;
+}
+
+.portfolioBox {
+    text-align: center;
+    padding: 15px;
+}
+
+
+.imageContainer {
+    text-align: center;
+}
+
+img {
+    max-width: 30%;
+    margin: 15px;
 }
