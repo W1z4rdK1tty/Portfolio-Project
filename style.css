@@ -10,21 +10,28 @@ body {
 
 .darkModeSection {
     border: solid 5px white;
+    background-color: black;
 }
 
 .lightModeSection {
     border: solid 5px black;
+    background-color: white;
 }
+
+.catMode {
+    background-image: url(images/IMG_20230517_121027_106.jpg);
+    background-repeat: repeat;
+    background-size: 25%;
+}
+
 
 .headerBar {
     display: flex;
-    /* flex-grow: 1; */
     flex-basis: 0;
     background-color: purple;
     margin-top: 15px;
     padding: 5px;
     color: white;
-    /* text-align: center; */
     justify-content: space-between;
 }
 
@@ -33,18 +40,26 @@ h1 {
 }
 
 #clicker {
-  height: fit-content;
-  padding: 5px;
-  text-align: center;
-  align-content: center;
-  margin-top: 22.5px;
-  margin-right: 10px;
+    height: fit-content;
+    padding: 5px;
+    text-align: center;
+    align-content: center;
+    margin-top: 22.5px;
+    margin-right: 10px;
+}
+
+#catMode {
+    height: fit-content;
+    padding: 5px;
+    text-align: center;
+    align-content: center;
+    margin-top: 22.5px;
+    margin-left: 10px;
 }
 
 .footer {
     display: flex;
     flex-direction: row;
-    /* flex-basis: 0; */
     justify-content: space-between;
     background-color: purple;
     margin-bottom: 15px;
@@ -57,17 +72,16 @@ h1 {
 .footerLeft {
     display: flex;
     align-items: center;
-    /* align-content: left; */
     text-align: left;
 }
 
 #contactSection {
     display: flex;
-   
+
 }
 
 .footerMiddle {
-    display:flex;
+    display: flex;
     align-items: center;
     font-size: 1.5rem;
     margin-right: 0.8rem;
@@ -83,9 +97,9 @@ h1 {
     align-items: center;
 }
 
-.socials a { 
-    color:white;
-    text-decoration:none;
+.socials a {
+    color: white;
+    text-decoration: none;
 }
 
 .socials a:hover {
@@ -93,26 +107,19 @@ h1 {
 }
 
 .container {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    /* padding: 50px 300px; */
     padding: 50px 20%;
     gap: 50px;
     flex-wrap: wrap;
 }
 
 #jumbotron {
-    /* border: solid 5px black; */
-    /* margin-left: 200px;
-    margin-right: 200px; */
     padding: 15px;
     text-align: center;
 }
 
 #secondbox {
-    /* border: solid 5px black; */
-    /* margin-left: 200px;
-    margin-right: 200px; */
     padding: 5px;
     align-items: center;
 }
@@ -139,4 +146,3 @@ img {
         padding: 50px;
     }
 }
-

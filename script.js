@@ -10,16 +10,43 @@ const secondboxElement = document.getElementById('secondbox')
 // listening out for click to then run funtion toggledark
 clickerButton.addEventListener('click', toggledark)
 
-
-function toggledark () {
-    let element = document.body;
-    element.classList.toggle('darkMode')
+// created function to toggle classes to change modes
+function toggledark() {
+    // variable to target body element of page, classList to amend to 2nd allocated class
+    let bodyElement = document.body;
+    bodyElement.classList.toggle('darkMode')
+    // below is same as above but referencing global variables created above function to toggle modes - setting created in css for other modes
     jumbotronElement.classList.toggle('darkModeSection')
     jumbotronElement.classList.toggle('lightModeSection')
     secondboxElement.classList.toggle('darkModeSection')
     secondboxElement.classList.toggle('lightModeSection')
+    // if statement to change text on button when clicked
+    if (clickerButton.value == "Light Mode") {
+        clickerButton.value = "Dark Mode"
+        clickerButton.innerHTML = "Light Mode"
+    } else {
+        clickerButton.value = "Light Mode"
+        clickerButton.innerHTML = "Dark Mode"
+    }
 }
 
-// also want text on button to change when clicked and create a 3rd toggle option
-// needs some logic!
+//  Now all over again for cat mode button toggle
+const catModeButton = document.getElementById('catMode')
+
+catModeButton.addEventListener('click', toggleCat)
+
+function toggleCat() {
+    let elementBody = document.body;
+    elementBody.classList.toggle('catMode')
+    if (catModeButton.value == "Normal") {
+        catModeButton.value = "What's this?"
+        catModeButton.innerHTML = "Cat Mode!"
+    } else {
+        catModeButton.value = "Normal"
+        catModeButton.innerHTML = "What's this?"
+    }
+}
+
+
+
 
