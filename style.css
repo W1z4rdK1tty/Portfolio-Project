@@ -3,9 +3,23 @@ body {
     font-family: 'Philosopher', sans-serif;
 }
 
+.darkMode {
+    background-color: black;
+    color: white;
+}
+
+.darkModeSection {
+    border: solid 5px white;
+}
+
+.lightModeSection {
+    border: solid 5px black;
+}
+
 .headerBar {
     display: flex;
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    flex-basis: 0;
     background-color: purple;
     margin-top: 15px;
     padding: 5px;
@@ -30,6 +44,7 @@ h1 {
 .footer {
     display: flex;
     flex-direction: row;
+    /* flex-basis: 0; */
     justify-content: space-between;
     background-color: purple;
     margin-bottom: 15px;
@@ -86,16 +101,16 @@ h1 {
     flex-wrap: wrap;
 }
 
-.jumbotron {
-    border: solid 5px black;
+#jumbotron {
+    /* border: solid 5px black; */
     /* margin-left: 200px;
     margin-right: 200px; */
     padding: 15px;
     text-align: center;
 }
 
-.secondbox {
-    border: solid 5px black;
+#secondbox {
+    /* border: solid 5px black; */
     /* margin-left: 200px;
     margin-right: 200px; */
     padding: 5px;
