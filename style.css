@@ -57,10 +57,20 @@ h1 {
     transition: 0.7s;
 }
 
-button:hover {
+button {
+    background-color: white;
+}
+
+#clicker:hover {
     background-color: fuchsia;
     border: none;
-    padding: 5px;
+    padding: 8px;
+}
+
+#catMode:hover {
+    background-color: fuchsia;
+    border: none;
+    padding: 8px;
 }
 
 #catMode {
@@ -98,12 +108,23 @@ button:hover {
     align-items: center;
 }
 
-.footerMiddle {
+#contactMe {
     align-items: center;
     font-size: 1.5rem;
     font-weight: bold;
     margin-right: 0.8rem;
+    box-shadow: none;
+    border: none;
+    color: white;
+    background: transparent;
+    transition: 0.7s;
 }
+
+#contactMe:hover {
+    color: fuchsia;
+    border: none;
+}
+
 
 .socials {
     font-size: 2rem;

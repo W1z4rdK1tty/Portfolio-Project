@@ -70,5 +70,11 @@ function toggleCat() {
 }
 
 
+const contactBtn = document.getElementById('contactMe')
 
+contactBtn.addEventListener('click', emailPopUp)
+
+function emailPopUp() {
+    window.open("mailto:dummyemail@gmail.com")
+}
 
