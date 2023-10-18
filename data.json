@@ -5,6 +5,7 @@
       "name": "Project One",
       "desc": "This is my first project with iO Academy",
       "image": "https://media.istockphoto.com/id/1314888871/photo/silly-cat.jpg?s=2048x2048&w=is&k=20&c=VBflflb-t6XCeHyEToDk5elAUibwOyaceEGWyxjA4bQ=",
+      "altText": "Smiling grey tabby kitten",
       "link": "https://github.com/W1z4rdK1tty"
     },
     {
@@ -12,6 +13,7 @@
       "name": "Project Two",
       "desc": "This is my next project with iO Academy",
       "image": "https://media.istockphoto.com/id/157421701/photo/kitty-bath-time.jpg?s=2048x2048&w=is&k=20&c=ikq7c0yI0ycCUaEPEU4SG_x0EFbMdZ64LtkmpqY6guM=",
+      "altText": "Wet unimpressed cat",
       "link": "https://github.com/W1z4rdK1tty"
     },
     {
@@ -19,6 +21,7 @@
       "name": "Project Three",
       "desc": "This is my final project with iO Academy",
       "image": "https://media.istockphoto.com/id/626464158/photo/cat-with-open-mouth.jpg?s=2048x2048&w=is&k=20&c=0FsAVCe-Mk-abUSlNGgQY59kiNvlzbal54TxWUw1oo8=",
+      "altText": "Funny ginger kitten",
       "link": "https://github.com/W1z4rdK1tty"
     }
   ]

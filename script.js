@@ -10,7 +10,7 @@ fetch('data.json').then(function (response) {
         output += '<div class="project">'
         output += '<h3>' + project.name + '</h3>'
         output += '<a href="' + project.link + '" target="_blank">'
-        output += '<img src="' + project.image + '" />'
+        output += '<img class="thumbnail" src="' + project.image + '" alt="' + project.altText + '"/>'
         output += '</a>'
         output += '<p>' + project.desc + '</p>'
         output += '</div>'

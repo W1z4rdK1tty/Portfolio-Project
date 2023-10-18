@@ -25,8 +25,9 @@ body {
 }
 
 .headerBar {
-    display: flex;
-    flex-basis: 0;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    width: auto;
     background-color: purple;
     margin-top: 15px;
     padding: 5px;
@@ -34,26 +35,44 @@ body {
     justify-content: space-between;
 }
 
+.alignRight {
+    text-align: right;
+}
+
 h1 {
     text-align: center;
+    justify-content: center;
 }
 
 #clicker {
     height: fit-content;
-    padding: 5px;
+    padding: 8px;
     text-align: center;
-    align-content: center;
+    align-content: right;
     margin-top: 22.5px;
     margin-right: 10px;
+    box-shadow: none;
+    border: none;
+    border-radius: 8px;
+    transition: 0.7s;
+}
+
+button:hover {
+    background-color: fuchsia;
+    border: none;
+    padding: 5px;
 }
 
 #catMode {
     height: fit-content;
-    padding: 5px;
+    padding: 8px;
     text-align: center;
     align-content: center;
     margin-top: 22.5px;
     margin-left: 10px;
+    border: none;
+    border-radius: 8px;
+    transition: 0.7s;
 }
 
 .footer {
@@ -71,16 +90,15 @@ h1 {
 .footerLeft {
     display: flex;
     align-items: center;
-    text-align: left;
+    text-align: center;
 }
 
 #contactSection {
     display: flex;
-
+    align-items: center;
 }
 
 .footerMiddle {
-    display: flex;
     align-items: center;
     font-size: 1.5rem;
     font-weight: bold;
@@ -93,7 +111,7 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 80px;
-    gap: 8px;
+    gap: 15px;
     align-items: center;
 }
 
@@ -130,7 +148,6 @@ h1 {
     padding: 15px;
 }
 
-
 .imageContainer {
     display: flex;
     justify-content: space-around;
@@ -142,6 +159,19 @@ img {
     margin: 5px;
 }
 
+.thumbnail { 
+    top:-50px; 
+    z-index:999; 
+    cursor: pointer; 
+    transition-property: all; 
+    transition-duration: 0.3s; 
+    transition-timing-function: ease; 
+    } 
+    
+.thumbnail:hover { 
+    transform: scale(1.5); 
+    }
+
 
 @media screen and (max-width: 1200px) {
     .container {
@@ -150,7 +180,11 @@ img {
     .imageContainer {
         flex-direction: column;
     }
+    .thumbnail:hover { 
+        transform: scale(1.2); 
+        }
 }
+
 
 @media screen and (max-width: 800px) {
     .container {
@@ -163,4 +197,19 @@ img {
     img {
         max-width: 70%
     }
+    .thumbnail:hover { 
+        transform: scale(1.2); 
+        }
 }
+
+@media screen and (max-width: 627px) {
+    .alignRight {
+        vertical-align: center;
+    }
+    #catMode {
+        vertical-align: center;
+    }
+    .headerBar {
+        overflow-wrap: normal;
+    }
+    }
