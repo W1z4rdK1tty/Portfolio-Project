@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Philosopher', sans-serif;
+    position: relative;
 }
 
 .darkMode {
@@ -111,6 +112,75 @@ button {
     font-size: 300%;
     border: none;
     background-color: transparent;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 50px;
+    row-gap: 9px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 450px;
+    padding: 1.3rem;
+    min-height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    background-color: purple;
+    border: 5px solid black;
+    border-radius: 15px;
+    font-family: 'Philosopher', sans-serif;
+    z-index: 2;
+}
+
+.modal .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal input {
+    padding: 0.7rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.modal p {
+    font-size: 1.5rem;
+    margin: 10px;
+    text-align: center;
+}
+
+.btn-close {
+    background-color: fuchsia;
+    border: none;
+    font-weight: bold;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+}
+
+.hidden {
+    display: none;
 }
 
 
@@ -234,7 +304,7 @@ img {
     }
 
     .thumbnail:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 }
 
