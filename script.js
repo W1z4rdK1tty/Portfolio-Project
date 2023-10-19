@@ -69,12 +69,39 @@ function toggleCat() {
     }
 }
 
+var scrollTop = document.getElementById("scrollTop");
+
+window.onscroll = function(){
+    scrollfunction()
+};
+function scrollfunction(){
+
+    if( document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+        scrollTop.style.display = "block";
+    } else {
+        scrollTop.style.display = "none";
+    }
+}
+
+scrollTop.addEventListener("click", function(){
+    window.scrollTo({
+        left: 0,
+        top: 0,
+        behavior: "smooth"
+    })
+})
+
+
+
+
+
 
 const contactBtn = document.getElementById('contactMe')
 
 contactBtn.addEventListener('click', emailPopUp)
 
 function emailPopUp() {
+    // window.alert("Email is my preferred method of communication")
     window.open("mailto:dummyemail@gmail.com")
 }
 

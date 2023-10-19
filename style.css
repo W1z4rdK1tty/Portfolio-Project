@@ -32,7 +32,6 @@ body {
     margin-top: 15px;
     padding: 5px;
     color: white;
-    justify-content: space-between;
 }
 
 .alignRight {
@@ -102,6 +101,18 @@ button {
     align-items: center;
     text-align: center;
 }
+
+#scrollTop {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 25px;
+    color: fuchsia;
+    font-size: 300%;
+    border: none;
+    background-color: transparent;
+}
+
 
 #contactSection {
     display: flex;
@@ -180,57 +191,64 @@ img {
     margin: 5px;
 }
 
-.thumbnail { 
-    top:-50px; 
-    z-index:999; 
-    cursor: pointer; 
-    transition-property: all; 
-    transition-duration: 0.3s; 
-    transition-timing-function: ease; 
-    } 
-    
-.thumbnail:hover { 
-    transform: scale(1.5); 
-    }
+.thumbnail {
+    top: -50px;
+    z-index: 999;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.5);
+}
 
 
 @media screen and (max-width: 1200px) {
     .container {
         padding: 50px;
     }
+
     .imageContainer {
         flex-direction: column;
     }
-    .thumbnail:hover { 
-        transform: scale(1.2); 
-        }
-}
 
+    .thumbnail:hover {
+        transform: scale(1.2);
+    }
+}
 
 @media screen and (max-width: 800px) {
     .container {
         padding: 25px;
         font-size: larger;
     }
+
     .imageContainer {
         flex-direction: column;
     }
+
     img {
         max-width: 70%
     }
-    .thumbnail:hover { 
-        transform: scale(1.2); 
-        }
+
+    .thumbnail:hover {
+        transform: scale(1.2);
+    }
 }
+
 
 @media screen and (max-width: 627px) {
     .alignRight {
         vertical-align: center;
     }
+
     #catMode {
         vertical-align: center;
     }
+
     .headerBar {
         overflow-wrap: normal;
     }
-    }
+}
