@@ -184,6 +184,10 @@ button {
     display: none;
 }
 
+#submitButton {
+    background-color: fuchsia;
+    border: none;
+}
 
 #contactSection {
     display: flex;

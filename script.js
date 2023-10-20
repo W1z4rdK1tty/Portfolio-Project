@@ -71,19 +71,19 @@ function toggleCat() {
 
 var scrollTop = document.getElementById("scrollTop");
 
-window.onscroll = function(){
+window.onscroll = function () {
     scrollfunction()
 };
-function scrollfunction(){
+function scrollfunction() {
 
-    if( document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         scrollTop.style.display = "block";
     } else {
         scrollTop.style.display = "none";
     }
 }
 
-scrollTop.addEventListener("click", function(){
+scrollTop.addEventListener("click", function () {
     window.scrollTo({
         left: 0,
         top: 0,
@@ -96,20 +96,32 @@ const overlay = document.querySelector(".overlay");
 const openModalBtn = document.querySelector(".btn-open");
 const closeModalBtn = document.querySelector(".btn-close");
 
+let submitButton = document.getElementById('submitButton');
+console.log(submitButton);
+
+
 const openModal = function () {
     modal.classList.remove("hidden");
     overlay.classList.remove("hidden");
-  };
-  
-  openModalBtn.addEventListener("click", openModal);
+    //once the modal exists query selector it and assign to global variable
+    submitButton.addEventListener('click', formSubmit); 
+};
 
-  const closeModal = function () {
+openModalBtn.addEventListener("click", openModal);
+
+const closeModal = function () {
     modal.classList.add("hidden");
     overlay.classList.add("hidden");
-  };
-  
-  closeModalBtn.addEventListener("click", closeModal);
 
-  overlay.addEventListener("click", closeModal);
+};
+
+function formSubmit(event) {
+    event.preventDefault()
+    submitButton.addEventListener("click", closeModal);
+}
+
+closeModalBtn.addEventListener("click", closeModal);
+
+overlay.addEventListener("click", closeModal);
 
 
